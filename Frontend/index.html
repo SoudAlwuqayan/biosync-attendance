@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioSync Attendance Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="background-watermark">SDSU</div>
+
+    <div class="container">
+        <header class="header">
+            <div>
+                <h1>BioSync Attendance Dashboard</h1>
+                <p>Senior Design Project - Attendance Monitoring System</p>
+            </div>
+            <button onclick="loadData()" class="refresh-btn">Refresh</button>
+        </header>
+
+        <section class="stats-bar">
+            <div class="stat-card">
+                <h3>Total Records</h3>
+                <p id="total-records">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>System Status</h3>
+                <p>Online</p>
+            </div>
+            <div class="stat-card">
+                <h3>Backend</h3>
+                <p>Connected</p>
+            </div>
+        </section>
+
+        <section class="table-section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Student ID</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body"></tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

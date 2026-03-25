@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-watermark">SDSU</div>
+
+    <div class="container">
+        <header class="header">
+            <div>
+                <h1>Student Dashboard</h1>
+                <p id="student-name">Loading...</p>
+            </div>
+            <button onclick="logout()" class="refresh-btn">Logout</button>
+        </header>
+
+        <section class="stats-bar">
+            <div class="stat-card">
+                <h3>Student Number</h3>
+                <p id="student-number">-</p>
+            </div>
+            <div class="stat-card">
+                <h3>Total Attendance Records</h3>
+                <p id="total-records">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Status</h3>
+                <p>Student Access</p>
+            </div>
+        </section>
+
+        <section class="table-section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Time</th>
+                        <th>ID Card</th>
+                        <th>Fingerprint</th>
+                        <th>Attendance</th>
+                        <th>Device</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body"></tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="student.js"></script>
+</body>
+</html>

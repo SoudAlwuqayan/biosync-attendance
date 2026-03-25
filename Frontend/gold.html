@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold User Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-watermark">SDSU</div>
+
+    <div class="container">
+        <header class="header">
+            <div>
+                <h1>Gold User Dashboard</h1>
+                <p id="gold-name">Full system and class visibility</p>
+            </div>
+            <button onclick="logout()" class="refresh-btn">Logout</button>
+        </header>
+
+        <section class="table-section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Class ID</th>
+                        <th>Class Name</th>
+                        <th>Enrolled</th>
+                        <th>Attended</th>
+                        <th>Absent</th>
+                        <th>Summary</th>
+                        <th>Open</th>
+                    </tr>
+                </thead>
+                <tbody id="gold-body"></tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="gold.js"></script>
+</body>
+</html>

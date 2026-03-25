@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioSync Portal Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-watermark">SDSU</div>
+
+    <div class="container">
+        <header class="header">
+            <div>
+                <h1>BioSync Portal Login</h1>
+                <p>Sign in with your assigned access level</p>
+            </div>
+        </header>
+
+        <section class="table-section" style="max-width: 500px; margin: 40px auto;">
+            <div style="display:flex; flex-direction:column; gap:15px;">
+                <input id="email" type="email" placeholder="Email" style="padding:12px; font-size:16px; border-radius:10px; border:1px solid #ccc;">
+                <input id="password" type="password" placeholder="Password" style="padding:12px; font-size:16px; border-radius:10px; border:1px solid #ccc;">
+                <button onclick="login()" class="refresh-btn" style="align-self:center;">Login</button>
+                <p id="message" style="text-align:center; color:#990000; font-weight:bold;"></p>
+            </div>
+        </section>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

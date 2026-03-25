@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-watermark">SDSU</div>
+
+    <div class="container">
+        <header class="header">
+            <div>
+                <h1 id="class-title">Class Details</h1>
+                <p>Students and attendance records</p>
+            </div>
+            <button onclick="goBack()" class="refresh-btn">Back</button>
+        </header>
+
+        <section class="table-section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Student Number</th>
+                        <th>Time</th>
+                        <th>ID Card</th>
+                        <th>Fingerprint</th>
+                        <th>Attendance</th>
+                        <th>Device</th>
+                    </tr>
+                </thead>
+                <tbody id="class-table-body"></tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="class.js"></script>
+</body>
+</html>
